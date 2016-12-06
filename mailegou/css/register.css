@@ -1,0 +1,203 @@
+.regTop .settleTopMain{
+	width: 1000px;
+	margin: 0 auto;
+}
+.regTop .settleTopMain .leftTopMain{
+	float: left;
+	padding-top: 20px;
+}
+.regTop .settleTopMain .rightTopMain{
+	float: right;
+	margin-top: 25px;
+}
+
+
+.clear{
+	clear: both;
+}
+
+.regMain{
+	width: 960px;
+	margin: 0 auto;
+	min-height: 600px;
+}
+.regMain .regLeft{
+	float: left;
+	width: 508px;
+	padding-top: 30px;
+	
+}
+.regMain .regRight{
+	border: #ccc 1px solid;
+    border-top: #ea3918 2px solid;
+    width: 290px;
+    float: right;
+    margin-right: 80px;
+    margin-top: 30px;
+    padding: 20px 40px;
+}
+.regMain .regRight h3{
+	float: left;
+    font-size: 22px;
+    color: #444;
+    font-weight: normal;
+    position: relative;
+}
+.regMain .regRight .rR{
+	float: right;
+    display: block;
+    line-height: 24px;
+    width: 160px;
+    text-align: right;
+    font-size: 12px;
+}
+.regMain .regRight .rR a{
+	color: #999;
+}
+.regMain .regRight .rR a:hover{
+	color: #0000FF;
+}
+
+#divPhone .ulF{
+	margin-top: 20px;
+}
+#divPhone .ulF li{
+	height: 54px;
+}
+#divPhone .ulF li input{
+	border: 1px solid #dedede;
+    color: #999;
+    font-size: 14px;
+    height: 30px;
+    width: 274px;
+    line-height: 30px;
+    padding: 0 8px;
+}
+
+#divPhone .ulF li.security input{
+	width: 100px;
+	padding-left: 8px;
+}
+#divPhone .ulF li.security span{
+	display: inline-block;
+	vertical-align: middle;
+	width: 85px;
+	height: 25px;
+	margin-right: 5px;
+	border: 1px solid #adadad;
+	text-align: center;
+	line-height: 25px;
+	background: #ccc;
+}
+#divPhone .ulF li.security a{
+	color: #999;
+}
+#divPhone .ulF li.security a:hover{
+	color: #0000FF;
+}
+#divPhone .ulF li.note input{
+	width: 100px;
+	padding-left: 8px;
+}
+#divPhone .ulF li.note a{
+	display: inline-block;
+	width: 108px;
+	height: 28px;
+	border: 1px solid #ccc;
+    background: #eee;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    color: #444;
+    font-size: 12px;
+}
+#divPhone .ulF li p{
+	line-height: 24px;
+	height: 24px;
+	width: 290px;
+}
+.colorT{
+	color: green;
+}
+.colorF{
+	color: #ff6b52;
+}
+.colorL{
+	color: #B82F17;
+}
+.colorM{
+	color: blue;
+}
+#divPhone .ulS{
+	font-size: 12px;
+}
+#divPhone .ulS .ulS-t input{
+	border: 0;
+	height: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+    border: 1px solid #dedede;
+    color: #999;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    outline: none;
+}
+#divPhone .ulS .ulS-t a:hover{
+	color: #0000FF;
+}
+#divPhone .ulS .btn{
+	background-color: #e83917;
+    width: 290px;
+    margin-top: 5px;
+    color: #fff;
+    font-size: 22px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+ .about{
+	width: 100%;
+	height: 35px;
+	background: #444851;
+	text-align: center;
+	line-height: 35px;
+}
+ .about a{
+	color: #adadad;
+	padding: 0 17px;
+}
+ .about a:hover{
+	color: #fff;
+}
+
+
+
+.box{
+	position: absolute;
+	margin-top: -180px;
+	left: 50%;
+	top: 0;
+	margin-left: -235px;
+	width: 470px;
+	height: 180px;
+	background-color: #c33;
+	text-align: center;
+}
+.box p{
+	line-height: 90px;
+	font-size: 30px;
+	color: #666;
+}
+.box h3{
+	font: 20px/90px "";
+	cursor: pointer;
+}

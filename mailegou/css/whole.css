@@ -1,0 +1,186 @@
+.whole{
+	width: 100%;
+	height: 480px;
+	background-color: #f3f3f3;
+	padding-top: 25px;
+}
+.whole .content-title{
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 38px;
+}
+.whole .content-title h2{
+	display: inline-block;
+	float: left;
+	font: 18px/38px "";
+}
+.whole .content-title h2 .iTit{
+	display: block;
+	float: left;
+	width: 58px;
+	height: 38px;
+	background: url(../img/icon_index.png) -41px -44px;
+	margin-right: 5px;
+}
+.whole .content-title .subTit{
+	font: 12px/38px "";
+	color: #adadcc;
+	margin-left: 10px;
+}
+.whole .content-title .more{
+	position: absolute;
+	right: 0;
+	top: 15px;
+	color: #666;
+    font-family: SimSun;
+}
+.whole .content-title .more:hover{
+	color: #CB3415;;
+}
+.whole .content-title .timeCount{
+	position: absolute;
+	top: 0px;
+	left: 230px;
+	height: 100%;
+}
+.whole .content-title .timeCount span{
+	font: 12px/38px "";
+	color: #adadcc;
+}
+.whole .content-title .timeCount em{
+	display: inline-block;
+	width: 21px;
+	height: 30px;
+	background: url(../img/icon_index.png) -254px -2px;
+	font: 700 15px/30px "";
+	text-align: center;
+	color: #362e2b;
+}
+.whole .content-title .timeCount em.em-last{
+	background: url(../img/icon_index.png) -301px -5px;
+}
+
+.whole .time-title{
+	position: relative;
+	height: 38px;
+}
+.whole .time-title ul{
+	margin-top: 5px;
+}
+.whole .time-title ul li{
+	float: left;
+	width: 20%;
+	height: 37px;
+	text-align: center;
+	background-color: #444851;
+	position: relative;
+}
+.whole .time-title ul li.active{
+	background: #cb351a;
+	
+}
+.whole .time-title ul li .arrow-down{
+	display: none;
+	width: 10px;
+	height: 10px;
+	background: #c33;
+	position: absolute;
+	left: 50%;
+}
+.whole .time-title ul li .first{
+	display: block;
+}
+.whole .time-title ul li a{
+	display: block;
+	color: #fff;
+}
+.whole .time-content{
+	position: relative;
+	margin-top: 10px;
+	overflow: hidden;
+	width: 100%;
+	height: 362px;
+	
+}
+.whole .time-content .ul{
+	position: relative;
+	top: 0;
+	left: 0;
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+.whole .time-content .current{
+	display: block;
+}
+.whole .time-content .ul .bt{
+	position: absolute;
+	right: 0;
+	text-align: center;
+	line-height: 30px;
+	width: 100px;
+	height: 30px;
+	-background: #f99;
+}
+.whole .time-content .ul .bt .next,
+.whole .time-content .ul .bt .prev{
+	display: inline-block;
+	width: 14px;
+	height: 24px;
+	background: #fff;
+	border: 1px solid #ddd;
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+}
+.whole .time-content .ul .bt .red{
+	color: #f95d5e;
+}
+.whole .time-content .ul .absolute{
+	width: 400%;
+	
+}
+.whole .time-content .ul .absolute li{
+	float: left;
+	background: #fff;
+	margin: 0 8px 0 0;
+	width: 290px;
+    height: 345px;
+    text-align: center;
+
+}
+.whole .time-content .ul .absolute li .name{
+	text-align: left;
+	padding: 0 10px;
+}
+.whole .time-content .ul .absolute li .price {
+	margin-top: 15px;
+	float: left;
+}
+.whole .time-content .ul .absolute li .price p{
+	color: #e02200;
+	font: 700 13px/30px "";
+	
+}
+.whole .time-content .ul .absolute li .price s{
+	font: 12px/30px "";
+	color: #a1a1a1;
+}
+.whole .time-content .ul .absolute li .buyBtn{
+	float: right;
+	width: 90px;
+	height: 30px;
+	background: #f95d5e;
+	text-align: center;
+	margin-top: 10px;
+}
+.whole .time-content .ul .absolute li .buyBtn a{
+	font: 13px/30px "";
+	color: #fff;
+}
+
+.add-ad{
+	padding: 27px 0;
+	background-color: #f3f3f3;
+}

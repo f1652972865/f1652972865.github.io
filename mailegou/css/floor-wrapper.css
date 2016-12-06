@@ -1,0 +1,164 @@
+.floor-wrapper{
+	background: #F3F3F3;
+	padding: 1px 0;
+	overflow: hidden;
+}
+
+.floor-wrapper .container .floor-item {
+	height: 490px;
+	margin: 25px 0;
+}
+.floor-wrapper .container .floor-item .layer{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.floor-wrapper .container .floor-item .layer .leftCon,
+.floor-wrapper .container .floor-item .layer .midFir,
+.floor-wrapper .container .floor-item .layer .midSec,
+.floor-wrapper .container .floor-item .layer .rightCon{
+	float: left;
+	margin-right: 10px;
+	height: 100%;
+	background: #f3f3f3;
+}
+
+.floor-wrapper .container .floor-item .layer .midFir a,
+.floor-wrapper .container .floor-item .layer .midSec a,
+.floor-wrapper .container .floor-item .layer .rightCon a{
+	display: block;
+	border: 1px solid #ededed;
+}
+
+.floor-wrapper .container .floor-item .layer .leftCon{
+	background: #fff;
+	width: 176px;
+	border: 1px solid #ededed;
+	
+}
+.floor-wrapper .container .floor-item .layer .leftCon h3{
+	height: 42px;
+	width: 100%;
+	text-align: center;
+	font: 14px/42px "";
+	color: #fff;
+	background: blue;
+	
+}
+.floor-wrapper .container .floor-item .layer .leftCon h3 b{
+	background: url(../img/icon_index.png) no-repeat -59px -411px;
+	display: block;
+	width: 30px;
+	height: 38px;
+	margin-left: 27px;
+	float: left;
+	
+}   
+.floor-wrapper .container .floor-item .layer .leftCon .subCate{
+	overflow: hidden;
+    padding: 13px 0 13px 25px;
+    height: 210px;
+}
+.floor-wrapper .container .floor-item .layer .leftCon .subCate a{
+	display: block;
+    width: 62px;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    margin-right: 10px;
+    font-family: "microsoft yahei";
+    overflow: hidden;
+}
+.floor-wrapper .container .floor-item .layer .leftCon .subCate a:hover{
+	color:#F95D5E;
+}
+.floor-wrapper .container .floor-item .layer .leftCon .brand{
+	position: relative;
+	width: 178px;
+	height: 207px;
+}
+.floor-wrapper .container .floor-item .layer .leftCon .brand .prev{
+	position: absolute;
+	top: 60px;
+	left: 5px;
+	width: 30px;
+	height: 82px;
+	background: url(../img/icon_index.png) no-repeat -308px -124px;
+	cursor: pointer;
+}
+.floor-wrapper .container .floor-item .layer .leftCon .brand .next{
+	position: absolute;
+	top: 60px;
+	right: 5px;
+	width: 30px;
+	height: 82px;
+	background: url(../img/icon_index.png) no-repeat -345px -124px;
+	cursor: pointer;
+}
+.floor-wrapper .container .floor-item .layer .leftCon .brand .br-b{
+	width: 90px;
+	height: 207px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.floor-wrapper .container .floor-item .layer .leftCon .brand .br-b ul{
+	width: 360px;
+	height: 100%;
+	overflow: hidden;
+}
+.floor-wrapper .container .floor-item .layer .leftCon .brand .br-b ul li{
+	width: 90px;
+	height: 100%;
+	float: left;
+}
+.floor-wrapper .container .floor-item .layer .leftCon .brand .br-b ul li a{
+	display: block;
+	width: 90px;
+	height: 35px;
+	margin-bottom: 15px;
+}
+
+
+
+.floor-wrapper .container .floor-item .layer .midFir{
+	width: 518px;
+}
+.floor-wrapper .container .floor-item .layer .midFir a{
+	margin-bottom: 10px;
+}
+
+
+.floor-wrapper .container .floor-item .layer .midSec{
+	width: 228px;
+}
+
+
+.floor-wrapper .container .floor-item .layer .rightCon{
+	width: 228px;
+	margin-right: 0;
+}
+
+
+.floor-wrapper .floor {
+	display: none;
+	position: fixed;
+	top: 200px;
+	left: 70px;
+	height: 210px;
+}
+
+.floor-wrapper .floor li {
+	width: 36px;
+	height: 40px;
+	line-height: 19px;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	color: #666;
+	cursor: pointer;
+	padding: 0 5px;
+}
+
+.floor-wrapper .floor li:hover,
+.floor-wrapper .floor li.active {
+	color: #e8a79c;
+}

@@ -1,0 +1,51 @@
+.recommend {
+	width: 100%;
+	background: #f3f3f3;
+	
+}
+.recommend .botCol{
+	width: 100%;
+	height: 190px;
+	background: #fafafa;
+	border-bottom: 1px solid #ddd;
+	
+}
+.recommend .botCol .colist{
+	width: 198px;
+	height: 190px;
+	float: left;
+}
+.recommend .botCol .colist .iconco{
+	width: 41px;
+	height: 41px;
+	margin: 15px auto 10px;
+	background: url(../img/icon_index.png) no-repeat -59px -244px;
+}
+.recommend .botCol .colist ul{
+	padding: 0 25px;
+	height: 72px;
+}
+.recommend .botCol .colist ul li{
+	float: left;
+	width: 60px;
+	line-height: 24px;
+	margin-left: 12px;
+	font-family: "microsoft yahei";
+}
+
+.recommend .botCol .colist ul li a{
+	color: #666;
+}
+.recommend .botCol .colist .sup-btn{
+	width: 80px;
+    height: 22px;
+    padding-right: 10px;
+    line-height: 22px;
+    margin: 15px auto 15px;
+    text-align: center;
+    background: url(../img/icon_index.png) no-repeat -59px -307px;
+}
+.recommend .botCol .colist .sup-btn a{
+	font-size: 14px;
+	color: #fff;
+}

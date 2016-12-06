@@ -1,0 +1,105 @@
+.myLike{
+	background: #f3f3f3;
+}
+.myLike .myLike-top{
+	height: 38px;
+	line-height: 46px;
+	margin-bottom: 5px;
+}
+.myLike .myLike-top h2{
+	display: inline-block;
+	font-size: 18px;
+	color: #c53616;
+}
+.myLike .myLike-top h2 .iTit-sale{
+	display: block;
+	width: 38px;
+	height: 38px;
+	float: left;
+	margin-right: 10px;
+	background: url(../img/icon_index.png) no-repeat -199px -44px;
+}
+.myLike .myLike-top span{
+	font-size: 14px;
+}
+.myLike .myLike-top span i{
+	position: relative;
+}
+.myLike .myLike-main{
+	width: 100%;
+	
+}
+.myLike .myLike-main .guess{
+	position: relative;
+	width: 100%;
+	height: 450px;
+	overflow: hidden;
+    font-size: 12px;
+}
+/*右上角按钮*/
+.myLike .myLike-main .guess .guess-btn{
+	position: absolute;
+	right: 11px;
+	top: 3px;
+	width: 70px;
+	height: 14px;
+	text-align: center;
+}
+/*左点击*/
+.myLike .myLike-main .guess .guess-btn .prev{
+	background: url(../img/icon_index.png) no-repeat -336px 0;
+    float: left;
+    height: 14px;
+    width: 9px;
+    cursor: pointer;
+}
+/*右点击*/
+.myLike .myLike-main .guess .guess-btn .next{
+	background: url(../img/icon_index.png) no-repeat -350px 0;
+    float: right;
+    height: 14px;
+    width: 9px;
+    cursor: pointer;
+}
+.myLike .myLike-main .guess .guess-btn .red{
+	color: #f95d5e;
+}
+/*左右点击按钮*/
+.myLike .myLike-main .guess .guess-arrow{
+	position: absolute;
+	width: 27px;
+	height: 84px;
+	cursor: pointer;
+	
+}
+/*左点击*/
+.myLike .myLike-main .guess .guess-left{
+	background: url(../img/icon_index.png) no-repeat -201px -125px;
+	top: 50%;
+	margin-top: -42px;
+	left: 2px;
+}
+/*右点击*/
+.myLike .myLike-main .guess .guess-right{
+	background: url(../img/icon_index.png) no-repeat -258px -125px;
+	right: 2px;
+	top: 50%;
+	margin-top: -42px;
+}
+
+.myLike .myLike-main .guess .guess-item{
+	width: 600%;
+	height: 100%;
+}
+.myLike .myLike-main .guess .guess-item ul{
+	float: left;
+	width: 1190px;
+	height: 100%;
+}
+.myLike .myLike-main .guess .guess-item ul li{
+	width: 228px;
+	height: 220px;
+	background: #fff;
+	margin: 0 10px 10px 0;
+	float: left;
+}

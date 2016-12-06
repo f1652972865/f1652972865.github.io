@@ -1,0 +1,21 @@
+.banner{
+	width: 100%;
+	position: relative;
+	z-index: -20;
+}
+.banner .banner-article{
+	width: 810px;
+	height: 480px;
+	position: relative;/*circle定位*/
+	top: 0;
+	left: -9px;
+	overflow: hidden;
+	z-index: -10;
+}
+.banner .banner-article .ban-container{
+	width: 10000%;
+	height: 100%;
+}
+.banner .banner-article .ban-container .img-item{
+	float: left;
+}

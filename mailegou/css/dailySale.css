@@ -1,0 +1,76 @@
+.dailySale {
+	background: #f3f3f3;
+}
+.dailySale .dailySale-top{
+	height: 38px;
+	line-height: 46px;
+	margin-bottom: 5px;
+}
+.dailySale .dailySale-top h2{
+	display: inline-block;
+	font-size: 18px;
+	color: #c53616;
+}
+.dailySale .dailySale-top h2 .iTit-sale{
+	display: block;
+	width: 38px;
+	height: 38px;
+	float: left;
+	margin-right: 10px;
+	background: url(../img/icon_index.png) no-repeat -152px -44px;
+}
+.dailySale .dailySale-top span{
+	font-size: 14px;
+}
+.dailySale .dailySale-top span i{
+	position: relative;
+}
+
+
+.dailySale .dailySale-main ul li{
+	position: relative;
+	float: left;
+	width: 287px;
+	height: 290px;
+	overflow: hidden;
+	margin:0 10px 10px 0;
+}
+.dailySale .dailySale-main ul li img{
+	position: relative;
+	
+}
+.dailySale .dailySale-main ul li .saleTit{
+	position: absolute;
+	bottom: 0;
+	padding: 10px 10px;
+	height: 60px;
+	background: #fff;
+	width: 267px;
+	
+}
+.dailySale .dailySale-main ul li .saleTit h3{
+	display: inline-block;
+	
+}
+.dailySale .dailySale-main ul li .saleTit h3 p{
+	font: 12px/22px "";
+	color: #444;
+}
+.dailySale .dailySale-main ul li .saleTit h3 .limit i{
+	display: block;
+	width: 20px;
+	height: 22px;
+	background: url(../img/icon_index.png) no-repeat -520px 3px;
+	float: left;
+}
+.dailySale .dailySale-main ul li .saleTit .spanR{
+	float: right;
+	
+}
+.dailySale .dailySale-main ul li .saleTit .spanR {
+	color: #e02200;
+}
+.dailySale .dailySale-main ul li .saleTit .spanR b{
+	font-size: 20px;
+	line-height: 40px;
+}
