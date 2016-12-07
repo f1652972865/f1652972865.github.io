@@ -1,4 +1,3 @@
-
 .article{
 	margin: 0 auto;
 	width: 1190px;
@@ -101,7 +100,6 @@
 .head-top .search-ind{
 	position: relative;
 	float: left;
-	-width:300px;
 	height: 88px;
 	padding: 35px 0 0 355px;
 }
@@ -139,7 +137,6 @@
 	float: right;
 	
 }
-/*导航*/
 .navMain .menu-top{
 	display: inline-block;
 	width: 180px;
@@ -149,7 +146,106 @@
 	font: 14px/36px "";
 	color: #fff;
 	float: left;
+	position: relative;
 }
+.navMain .menu-top .menu-top-wrapper{
+	position: absolute;
+	top: 36px;
+	left: 0;
+	width: 100%;
+	height: 480px;
+	background: #CB351A;
+	
+}
+.navMain .menu-top .menu-top-wrapper ul{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.navMain .menu-top .menu-top-wrapper ul li{
+	width: 100%;
+	height: 51px;
+	border-top:1px solid #da5a44;
+	border-bottom:1px solid #b82f17;
+	position: relative;
+	z-index: 10;
+}
+.navMain .menu-top .menu-top-wrapper ul li:hover{
+	background-color: rgb(169,0,0);
+}
+
+.navMain .menu-top .menu-top-wrapper ul li i{
+	display: inline-block;
+	float: left;
+	width: 39px;
+	height: 49px;
+	background: url(../img/icon_index.png) right  -50px;
+}
+
+.navMain .menu-top .menu-top-wrapper ul li h3{
+	color: #fff;
+	font-weight: normal;
+	font: 12px/20px "";
+}
+.navMain .menu-top .menu-top-wrapper ul li p {
+	
+    font: 12px/20px "";
+}
+.navMain .menu-top .menu-top-wrapper ul li p a{
+	color: #eca598;
+   
+}
+.navMain .menu-top .menu-top-wrapper ul li .menu-top-wrapper-info{
+	position: absolute;
+	left: 150px;
+	display: none;
+	width: 381px;
+	height: 452px;
+	background: #CB351A;
+	opacity: 0.6;
+	padding: 12px 8px 12px 15px;
+	z-index: 9;
+	border: 1px solid #c33;
+}
+.navMain .menu-top .menu-top-wrapper ul li .menu-top-wrapper-info p{
+	line-height: 30px;
+}
+.navMain .menu-top .menu-top-wrapper ul li .menu-top-wrapper-info p a{
+	color: green;
+}
+.navMain .menu-top .menu-top-wrapper ul li .menu-top-wrapper-info p a:hover{
+	color: #000;
+}
+.info{
+	top: -1px;
+}
+.info2{
+	top: -54px;
+}
+.info3{
+	top: -107px;
+}
+.info4{
+	top: -160px;
+}
+.info5{
+	top: -213px;
+}
+.info6{
+	top: -266px;
+}
+.info7{
+	top: -319px;
+}
+.info8{
+	top: -372px;
+}
+.info9{
+	top: -425px;
+}
+
+
+
 .navMain ul{
 	display: inline-block;
 	position: relative;
@@ -219,8 +315,6 @@
     border-color: #c8391d 
 }
 
-
-
 .navMain .nav-cart{
 	float: right;
     width: 198px;
@@ -237,80 +331,36 @@
 	color: #CB351A;
 }
 
-.navMain .menu-box ul{
-	position: relative;
-	top: -4px;
-	left: 117px;
-	width: 180px;
-	height: 484px;
-	overflow: hidden;
-    background-color: #cb3e25
-}
-.navMain .menu-box{
-	position: absolute;
-}
-.navMain .menu-box ul li{
-	height: 53px;
-	width: 200px;
-	border-top:1px solid #da5a44;
-	border-bottom:1px solid #b82f17;
-	text-align: center;
-}
-.navMain .menu-box ul li:hover{
-	background: rgb(169,0,0);
-}
-.navMain .menu-box ul li .li-box{
-	width: 100%;
-	margin-left: 2px;
-}
-/*.navMain .menu-box ul li i{
-	position: relative;
-	left: 0;
-	display: inline-block;
-    width: 39px;
-    height: 49px;
-    float: left;
-    margin-right: 10px;
-    font-size: 16px;
-    text-align: right;
-    text-decoration: none;
-    background:  url(../img/icon_index.png) no-repeat;
-    transition: width .2s linear 0s;
 
+.breadcrumb{
+	color: #999;
+    line-height: 50px;
+    height: 50px;
 }
-.navMain .menu-box ul li .bg1{
-    background-position: right -50px;
-}*/
+.breadcrumb a{
+	padding: 0 5px;
+	font-size: 12px;
+	font-family: "宋体",SimSun;
+}
+.breadcrumb span{
+	padding-left: 5px;
+	font-size: 12px;
+	font-family: "宋体",SimSun;
+}
+.breadcrumb a:hover{
+	color: #c33;
+}
 
-.navMain .menu-box ul li h3{
-	-margin-top: 5px;
-	color: #fff;
-	font-weight: normal;
-	font: 12px/20px "";
-	
+/*屏幕右侧边栏*/
+.right-sidebar{
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 35px;
+	background: #444851;
 }
-.navMain .menu-box ul li p a{
-	color: #eca598;
-    font: 12px/20px "";
-    margin:0 5px 2px 0;
-}
-/*.navMain .menu-box .menu-con{
-	position: absolute;
-	top: -4px;
-	left: 298px;
-}*/
-.navMain .menu-box .menu-con{
-	position: absolute;
-	top: -4px;
-	left: 288px;
-	width: 100px;
-	height: 480px;
-	opacity: 0;
-	background: #c33;
-}
-.navMain .menu-box .menu-con .menu-wrapper{
-	display: none;
-}
+
 
 
 

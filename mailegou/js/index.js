@@ -52,8 +52,9 @@ $(function(){
 			
 			this.hover();
 			this.listItem();
-			this.toUp();
-			this.MLeft();
+			//this.MLeft();
+			this.Show();
+			
 		},
 		//头部鼠标移进移出
 		hover:function(){
@@ -89,20 +90,29 @@ $(function(){
 				},500);
 			});
 		},
-		toUp:function(){
-			
-		},
-		//二级菜单
-		MLeft:function(){
-			$('.menu-box li').hover(function(){
-				$(this).children('.li-box').stop().animate({
-					marginLeft:30
-				},300);
-				$('.menu-wrapper').show().siblings().hide()
+		
+		Show:function(){
+			$('.menu-top ul li').hover(function(){
+				
+				$(this).find('.menu-top-wrapper-info').stop(true).animate({
+					left:180
+				}).css({
+					'display':'block'
+				})
+				$(this).stop(true).animate({
+					width:160,
+					paddingLeft:20
+				},300)
 			},function(){
-				$(this).children('.li-box').stop().animate({
-					marginLeft:0
-				},300);
+				$(this).stop(true).animate({
+					width:180,
+					paddingLeft:0
+				})
+				$(this).find('.menu-top-wrapper-info').stop(true).animate({
+					left:150
+				}).css({
+					display:'none'
+				})
 			})
 		},
 	};
