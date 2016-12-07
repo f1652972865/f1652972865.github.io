@@ -12,7 +12,13 @@ $(function(){
 		//高
 		regPswHigh : /[!@#\$%\^&\*\+\-]/,
 		
+		pswStatusU:false,
 		pswStatus: false,
+		pswStatusF:false,
+		pswStatusS:false,
+		pswStatusC:false,
+		pswStatusT:false,
+		pswStatusE:false,
 		
 		init:function(){
 			
@@ -30,8 +36,10 @@ $(function(){
 				$(this).val();
 				
 			});
+			
+			
 			$('.username').blur(function(){
-				
+				that.pswStatusU = false;
 				if( !that.user.test($(this).val()) ){
 					$('.p1').html('您输入的手机号码格式错误，请重新输入!').addClass('colorF');
 					return;
@@ -42,7 +50,7 @@ $(function(){
 						$('.p1').removeClass('colorF');
 					},3000);
 				}
-				
+				that.pswStatusU = true;
 			});
 			
 			//密码 获焦 失焦
@@ -50,6 +58,7 @@ $(function(){
 				//实时监控事件
 				input:function(){
 					
+					//that.pswStatusF = false;
 					//每次都假定用户输入的不合法
 					that.pswStatus = false;
 					
@@ -78,10 +87,13 @@ $(function(){
 						.removeClass('colorL colorT colorF');
 						return;
 					}
-					
+					//that.pswStatusF = true;
 				},
 				//失焦事件
 				blur: function(){
+					
+					that.pswStatusS = false;
+					
 					if( !that.PswLength.test( $(this).val()) ){
 						$('.p2').html('密码长度必须在6-20之间').addClass('colorF');
 						return;
@@ -90,11 +102,17 @@ $(function(){
 					if(that.pswStatus){
 						$('.p2').empty();
 					}
+					
+					
+					that.pswStatusS = true;
 				}
+				
+				
 			});
 			//确认密码
 			$('.password-check').on({
 				input:function(){
+					that.pswStatusC = false;
 					if( $(this).val() != $('.password').val() ){
 						$('.p3').html('两次密码不相同！').addClass('colorF');
 						return;
@@ -102,10 +120,13 @@ $(function(){
 					if( $(this).val() == $('.password').val() ){
 						$('.p3').empty();
 					}
+					
+					that.pswStatusC = true;
 				},
 				/*blur:function(){
 					$('.p3').empty();
 				}*/
+				
 			});
 			//点击切换数字
 			$('.change').click(function(){
@@ -117,12 +138,15 @@ $(function(){
 			});
 			
 			$('.security').blur(function(){
+				that.pswStatusT = false;
 				if( $(this).val() != $('.num').html() ){
 					$('.p4').html('验证码错误！').addClass('colorF');
 				}else{
 					$('.p4').empty();
 				}
+					that.pswStatusT = true;
 			});
+		
 			//随机短信验证码
 			$('.checkout').click(function(){
 				$('.box').animate({
@@ -141,33 +165,34 @@ $(function(){
 			
 			//判断短信验证码输入是否相同
 			$('.note-vertify').blur(function(){
+				that.pswStatusE = false;
+				
 				if( $(this).val() != $('.box p').html() ){
 					$('.p5').html('短信验证码错误！').addClass('colorF');
 				}else{
 					$('.p5').empty();
 				}
+				that.pswStatusE = true;
 			});
 			
 			
-			
+		
 		},
 		//点击立即注册
 		Register:function(){
+			var that=this;
 			$('.btn').click(function(){
 				if(
-				   	$('.username').val()==''
-					&&$('.password').val()==''
-					&&$('.password-check').val()==''
-					&&$('.security').val()==''
-					&&$('.checkout').val()==''
-					&&$('.note-vertify').val()==''
-				){
-					alert('验证未通过')
+					(that.pswStatusU)/*&&(that.pswStatusF)*/
+					&&(that.pswStatusS)&&(that.pswStatusC)
+					&&(that.pswStatusT)&&(that.pswStatusE)
 					
-				}else{
+				){
 					alert('验证通过')
-					console.log($('.checkout').val())
+				}else{
+					alert('验证未通过请重新输入！')
 				}
+				
 			})
 		}
 	};
