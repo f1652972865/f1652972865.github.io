@@ -157,6 +157,7 @@
 	height: 480px;
 	background: #CB351A;
 	display: none;
+	z-index: 10;
 }
 .navMain .menu-top .menu-top-wrapper ul{
 	width: 100%;
@@ -364,29 +365,53 @@
 }
 .product .preview .glass{
 	position: relative;
-	width: 350;
-	height: 350px;
+	width: 400px;
+	height: 400px;
 	border: 1px solid #ccc;
 }
 .product .preview .glass .small{
 	position: relative;
 }
 .product .preview .glass .small .img{
+	width: 400px;
+	height: 400px;
+}
+.product .preview .glass .small .filter{
 	position: absolute;
+	width: 200px;
+	height: 200px;
 	top: 0;
 	left: 0;
-	width: 350px;
-	height: 350px;
+	opacity: 0.3;
+	border: 1px solid #ccc;
+	background-color: yellow;
 	display: none;
 }
-.product .preview .glass .small img.first{
-	display: block;
-}
+
+
+
+
+
 .product .preview .glass .large{
 	position: absolute;
 	top: 0;
-	left: 362px;
+	left: 403px;
+	width: 400px;
+	height: 400px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	display: none;
 }
+.product .preview .glass .large img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 800px;
+	height: 800px;
+}
+
+
+
 .product .preview .spec{
 	width: 354px;
     height: 56px;

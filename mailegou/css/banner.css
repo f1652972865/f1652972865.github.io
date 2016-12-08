@@ -19,3 +19,16 @@
 .banner .banner-article .ban-container .img-item{
 	float: left;
 }
+.banner .banner-left{
+	position: absolute;
+	top: -5px;
+	right: 115px;
+}
+.banner .banner-left a{
+	display: block;
+	cursor: pointer;
+}
+.banner .banner-left a img{
+	cursor: pointer;
+	
+}

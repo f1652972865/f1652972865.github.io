@@ -23,6 +23,9 @@ $(function(){
 		
 		//方法
 		init:function(){
+			$('.banner').load('banner.html',function(){
+				$.getScript('js/banner.js')
+			});
 			
 			
 			$('.whole').load('whole.html',function(){
@@ -52,9 +55,9 @@ $(function(){
 			
 			this.hover();
 			this.listItem();
-			//this.MLeft();
 			this.Show();
-			
+			this.reveal();
+			this.BackTop();
 		},
 		//头部鼠标移进移出
 		hover:function(){
@@ -115,6 +118,31 @@ $(function(){
 				})
 			})
 		},
+		
+		reveal:function(){
+			$('.sidebar-main-b li').hover(function(){
+				$(this).find('div').stop(true).animate({
+					left:-80
+				},500)
+			},function(){
+				$(this).find('div').stop(true).animate({
+					left:35
+				},500)
+			})
+		},
+		BackTop:function(){
+			$('.sidebar-main-b li .back').click(function(){
+				//回到顶部
+				$('html,body').animate({
+					scrollTop:0
+				},300);
+			});
+		}
+		
+		
+		
+		
+		
 	};
 	index.init();
 });

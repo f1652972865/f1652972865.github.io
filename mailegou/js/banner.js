@@ -8,8 +8,9 @@ $(function(){
 		index:0,
 		
 		init:function(){
-			this.imgSwitch();
+			this.imgSwitch();			
 		},
+		
 		imgSwitch:function(){
 			var width = this.bannerArticle.width();
 			var that=this;
@@ -17,18 +18,22 @@ $(function(){
 				that.index++;
 				if(that.index >= that.imgItem.length){
 					that.index=0
+					that.banContainer.css({
+						marginLeft: 0
+					})
 				};
 				that.banContainer.animate({
 					marginLeft: -width*that.index
-				},500);
-				that.banner.css({
-					'background':'rgb(237,133,8)'
-				},500)
+				});
 				
-				
-			},1500)
-		}
+			},2000)
+			
+			
+		},
+		
 	};
 	banner.init();
 	
 });
+
+
