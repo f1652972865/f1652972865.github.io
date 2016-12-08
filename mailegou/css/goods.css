@@ -466,8 +466,8 @@
 
 .product .goodsName{
 	float: left;
-	width: 810px;
-	margin-left: 5px;
+	width: 750px;
+	margin-left: 64px;
 }
 .product .goodsName h1{
 	font-size: 18px;
@@ -487,4 +487,8 @@
 	position: relative;
 	margin: 10px 0 0 18px;
 	color: #666;
+	margin-left: 64px;
+	background: #c33;
+	
 }
+ 
