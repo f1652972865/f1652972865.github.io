@@ -117,7 +117,7 @@ $(function(){
 			//鼠标移动事件
 			$('.product .preview .glass .small').mousemove(function(e){
 				e=e||window.event;
-				
+				//鼠标相对文档的距离 - 元素相对文档的距离
 				var left = e.pageX - offsetL;
 				var top = e.pageY-offsetT;
 				

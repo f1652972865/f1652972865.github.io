@@ -45,17 +45,20 @@ var myLike={
 		var Gindex=0;
 		guessRight.click(function(){
 			Gindex++;
+			litm.html( Gindex + 1 );
 			guessItem.css({
 				'margin-left':-1*guessUlWidth*Gindex
 			});
-			litm.html( Gindex + 1 );
 			
-			/*if(this.litm>this.count){
-				this.guessItem.css({
+			
+			if( parseInt(litm.html()) > parseInt(count.html()) ){
+				guessItem.css({
 					'margin-left':0
 				});
-				
-			}*/
+				Gindex=1
+				litm.html( Gindex );
+			}
+			
 		});
 		/*左点击*/
 		guessLeft.click(function(){
@@ -64,7 +67,13 @@ var myLike={
 				'margin-left':-1*guessUlWidth*Gindex
 			});
 			litm.html( Gindex + 1 );
-			
+			if( parseInt(litm.html()) <= 0 ){
+				guessItem.css({
+					'margin-left':-1*guessUlWidth*5
+				});
+				Gindex=6
+				litm.html( Gindex );
+			}
 		});
 	}
 }
